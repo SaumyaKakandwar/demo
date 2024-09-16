@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+code {
+    @apply inline-block rounded-sm bg-slate-900 text-slate-200 px-1;
+}
+
+pre {
+    @apply w-full overflow-x-scroll rounded-md py-2 bg-slate-900 text-slate-200;
+    padding-left: 1rem; /* Adds space between the code and the border */
+}
+
+p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #db0011; /* Slightly toned down red */
+}
+
+p::before {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #000; /* Adjust the color and style as needed */
+    margin-top: 0.5em; /* Adjust the spacing after the paragraph */
+    margin-bottom: 0.5em;
+}
+
+.section-title {
+    @apply font-bold mt-4;
+}
+
+.file-name-box {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #ccc; /* Subtle border for better visibility */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+.review-box {
+    background-color: #ffffff;
+    padding: 15px; /* Increased padding for better spacing */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Slightly darker border */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Adds slight shadow */
+}
